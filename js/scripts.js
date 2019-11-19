@@ -1,20 +1,26 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
+    var FirstnameInput = $("input#Firstname").val();
+    var LastnameInput = $("input#Lastname").val();
+    var Email4Input= $("input#Email4").val();
+    var Password4Input = $("input#Password4").val();
+    var inputAddress = $("input#Address").val();
+    var inputAddress2 = $("input#Address2").val();
+    var inputCity = $("input#City").val();
+    var inputState = $("input#State").val();
+    var ZipInput = $("input#Zip").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    $(".inputFirstname").text(inputFirstname);
+    $(".inputLastname").text(inputLastname);
+    $(".inputEmail4").text(inputEmail4);
+    $(".inputPassword4").text(inputPassword4);
+    $(".inputAddress").text(inputAddress);
+    $(".inputFirstname").text(inputAddress2);
+    $(".inputCity").text(inputCity);
+    $(".inputState").text(inputState);
+    $(".zip").text(inputZip);
 
-    $("#story").show();
+    $("#receipt").show();
 
     event.preventDefault();
   });
